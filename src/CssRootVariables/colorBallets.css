@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Prompt:wght@200;300;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&display=swap");
+@import url("https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css");
+@import url("https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css");
+@import url("https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css");
+@import url("https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css");
+:root {
+  --primary-color: hsl(0, 0%, 100%);
+  --primary-color-800: hsl(0, 0%, 45%);
+  --primary-color-800: hsl(0, 0%, 50%);
+  --primary-color-700: hsl(0, 0%, 65%);
+  --primary-color-600: hsl(0, 0%, 70%);
+  --primary-color-500: hsl(0, 0%, 85%);
+  --primary-color-400: hsl(0, 0%, 95%);
+  --primary-color-300: hsl(0, 0%, 90%);
+  --primary-color-200: hsl(0, 0%, 80%);
+  --secondary-color-900: hsl(217, 100%, 9%);
+  --secondary-color-800: hsl(216, 100%, 18%);
+  --secondary-color-700: hsl(216, 100%, 32%);
+  --secondary-color: hsl(216, 100%, 45%);
+  --secondary-color-500: hsl(216, 100%, 62%);
+  --secondary-color-400: hsl(216, 100%, 67%);
+  --secondary-color-300: hsl(216, 100%, 78%);
+  --secondary-color-200: hsl(216, 100%, 84%);
+  --secondary-color-200: hsl(216, 100%, 89%);
+  --secondary-color-100: hsl(216, 100%, 95%);
+  --third-color: hsl(0, 0%, 97%);
+  --fourth-color: hsl(248, 82%, 39%);
+  --five-color: hsl(60, 2%, 87%);
+  --accent-primary-color: hsl(180, 7%, 19%);
+  --accent-secondary-color: hsl(33, 80%, 57%);
+  --text-color: hsl(0, 0%, 9%);
+  --text-color-secondary: hsl(0, 0%, 96%);
+  --success-color: hsl(116, 70%, 27%);
+  --error-color: hsl(324, 82%, 50%);
+  --info-color: hsl(216, 100%, 62%);
+  --warning-color: hsl(40, 82%, 50%);
+  --border-color: hsl(210, 18%, 24%);
+  --shadows-color: hsla(188, 56%, 23%, 0.549);
+  --hover-color: hsl(205, 22%, 85%);
+  --border-radius: 0.4rem;
+  --bs-body-font-family: "Nunito", sans-serif;
+  --prompt-sans-family: "Prompt", sans-serif;
+  --modal-color: hsla(217, 100%, 9%, 0.404);
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
+  background-color: inherit;
+}
+
+.fade-in {
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateX(-35px);
+  opacity: 0.5;
+}
+
+.fade-disabled {
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateX(0);
+  opacity: 1;
+}
+.no-scroll {
+  position: fixed;
+  overflow: hidden;
+  width: 100%;
+}
