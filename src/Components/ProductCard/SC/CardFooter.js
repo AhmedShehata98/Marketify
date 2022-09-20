@@ -89,7 +89,6 @@ function CardFooter(props) {
 
   const handleAddToCart = useCallback((e) => {
     dispatch(ADD_ITEM_TO_CART(props.productData));
-    setaddedCart((added) => (added = true));
   });
 
   return (
@@ -108,10 +107,10 @@ function CardFooter(props) {
           onClick={handleAddToCart}
           className={addedCart ? "prevent-actions bg-success" : null}
         >
-          {addedCart === true ? (
+          {props.insideCart === true ? (
             <>
               <i className="fi fi-rr-shopping-cart-check text-black lh-1"></i>
-              <p className="lh-1 mb-0">added to Cart</p>
+              <p className="lh-1 mb-0">in cart</p>
             </>
           ) : (
             <>

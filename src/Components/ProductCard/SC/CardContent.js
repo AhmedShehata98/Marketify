@@ -188,6 +188,7 @@ function CardContent(props) {
         listview={props.listview}
         discription={props.discription}
         productData={props.productData}
+        insideCart={props.insideCart}
       />
     </StyledCardContent>
   );

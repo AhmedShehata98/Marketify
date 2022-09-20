@@ -2,8 +2,8 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
   isEmpty:
-    localStorage.cartData !== null &&
-    JSON.parse(localStorage.cartData).length > 0
+    localStorage.cartData !== undefined &&
+    JSON.parse(localStorage.cartData)?.length > 0
       ? false
       : true,
   cartData:

@@ -14,7 +14,6 @@ const ProductCard = forwardRef((props, ref) => {
     if (props.insideSwiper === true) {
       return `${cardWrapper["card-wrapper"]} ${cardWrapper["inside-swiper"]}`;
     }
-    console.table(this);
   };
 
   return (
@@ -36,6 +35,7 @@ const ProductCard = forwardRef((props, ref) => {
         listview={props.listview}
         discription={props.discription}
         productData={props.productsData}
+        insideCart={props.insideCart}
       />
     </li>
   );
